@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题页面</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled2.css" rel="stylesheet">
+<link href="home.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#PageHeader').addClass('visibility-hidden');
+   $('#wb_LayoutGrid6').addClass('visibility-hidden');
+   $('#wb_ThreeColumns').addClass('visibility-hidden');
+   $('#wb_LayoutGrid2').addClass('visibility-hidden');
+   $('#wb_LayoutGrid1').addClass('visibility-hidden');
+   $('#about').addClass('visibility-hidden');
+   $('#wb_VideoBackground').addClass('visibility-hidden');
+   $('#wb_LayoutGrid3').addClass('visibility-hidden');
+   $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   function onScrollPageHeader()
+   {
+      var $obj = $("#PageHeader");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('PageHeader', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('PageHeader', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#PageHeader').inViewPort(true))
+   {
+      $('#PageHeader').addClass("in-viewport");
+   }
+   onScrollPageHeader();
+   $(window).scroll(function(event)
+   {
+      onScrollPageHeader();
+   });
+   function onScrollLayoutGrid6()
+   {
+      var $obj = $("#wb_LayoutGrid6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid6').inViewPort(true))
+   {
+      $('#wb_LayoutGrid6').addClass("in-viewport");
+   }
+   onScrollLayoutGrid6();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid6();
+   });
+   $('#wb_LayoutGrid6').parallax();
+   function onScrollThreeColumns()
+   {
+      var $obj = $("#wb_ThreeColumns");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_ThreeColumns', 'animate-fade-in-up', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_ThreeColumns', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_ThreeColumns').inViewPort(true))
+   {
+      $('#wb_ThreeColumns').addClass("in-viewport");
+   }
+   onScrollThreeColumns();
+   $(window).scroll(function(event)
+   {
+      onScrollThreeColumns();
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid2').inViewPort(true))
+   {
+      $('#wb_LayoutGrid2').addClass("in-viewport");
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
+   });
+   function onScrollLayoutGrid1()
+   {
+      var $obj = $("#wb_LayoutGrid1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid1', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid1').inViewPort(true))
+   {
+      $('#wb_LayoutGrid1').addClass("in-viewport");
+   }
+   onScrollLayoutGrid1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid1();
+   });
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#about').offset().top-50 }, 600, 'easeInQuad');
+   });
+   function onScrollabout()
+   {
+      var $obj = $("#about");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('about', 'animate-fade-in-up', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('about', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#about').inViewPort(true))
+   {
+      $('#about').addClass("in-viewport");
+   }
+   onScrollabout();
+   $(window).scroll(function(event)
+   {
+      onScrollabout();
+   });
+   function onScrollVideoBackground()
+   {
+      var $obj = $("#wb_VideoBackground");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_VideoBackground', 'slide-down-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_VideoBackground', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_VideoBackground').inViewPort(true))
+   {
+      $('#wb_VideoBackground').addClass("in-viewport");
+   }
+   onScrollVideoBackground();
+   $(window).scroll(function(event)
+   {
+      onScrollVideoBackground();
+   });
+   function onScrollLayoutGrid3()
+   {
+      var $obj = $("#wb_LayoutGrid3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid3', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid3').inViewPort(true))
+   {
+      $('#wb_LayoutGrid3').addClass("in-viewport");
+   }
+   onScrollLayoutGrid3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid3();
+   });
+   function onScrollLayoutGrid5()
+   {
+      var $obj = $("#wb_LayoutGrid5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-in-down', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid5').inViewPort(true))
+   {
+      $('#wb_LayoutGrid5').addClass("in-viewport");
+   }
+   onScrollLayoutGrid5();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid5();
+   });
+   $('#wb_LayoutGrid5').parallax();
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('VideoBackground-video');
+   });
+   ResponsiveVideo('VideoBackground-video');
+});
+</script>
+</head>
+<body data-bs-spy="scroll">
+<div id="container">
+</div>
+<div id="PageHeader" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:7777;">
+<div id="PageHeader_Container" style="width:1672px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<picture id="wb_Picture1" style="position:absolute;left:84px;top:11px;width:75px;height:28px;z-index:0">
+<img src="images/xctv .png" id="Picture1" alt="" width="75" height="29">
+</picture>
+<div id="wb_CssMenu1" style="position:absolute;left:1290px;top:5px;width:339px;height:40px;z-index:1;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./local-television.html" target="_self">地区分台</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./subsidiary-brands.html" target="_self">旗下品牌</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./XCTV-NEWS.html" target="_self">新闻部</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./channel.html" target="_self">频道</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6-overlay"></div>
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading17" style="display:block;width:100%;z-index:2;">
+<h1 id="Heading17">欢迎来到XCTV官网</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_ThreeColumns">
+<div id="ThreeColumns-overlay"></div>
+<div id="ThreeColumns">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading2" style="display:block;width:100%;z-index:3;">
+<h1 id="Heading2">我们的建设团队</h1>
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:'Microsoft YaHei UI';font-size:17px;">我们的团队总共有13人，这代表这我们可以迅速了解正在建设的项目以及最新内容，这是一个优势。这样我们可以迅速地编写新闻稿件并进行快速播出<br></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading3" style="display:block;width:100%;z-index:5;">
+<h1 id="Heading3">广播条件</h1>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Microsoft YaHei UI';font-size:17px;">XCTV的广播条件跟进时代潮流。使用潮流的大屏和包装，以及高端的自动化摄像机。台标也使用了最先进的动态台标的款式</span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Heading4" style="display:block;width:100%;z-index:7;">
+<h1 id="Heading4">分台之间的合作</h1>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Calibri;font-size:17px;">XCTV</span><span style="color:#000000;font-family:微软雅黑;font-size:17px;">在壮幸中轴线上分布着三个分台，通过快捷的的公路来快速互相交传新闻和文件。使得可以快速了解三地的最新报道和情况。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:9;">
+<h1 id="Heading1">滚木唱片</h1>
+</div>
+<div id="wb_Heading5" style="display:block;width:100%;z-index:10;">
+<h2 id="Heading5">介绍</h2>
+</div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;">滚木唱片，隶属于峡关广播电视集团.<br>为大型音乐制作公司，为XCTV和壮幸各地的音像公司提供资源<br>著名歌曲如《龟都》《壮幸东南山》等<br>点击下方按钮即可收听最新专辑。</span>
+</div>
+<div id="wb_Shape2" style="display:inline-block;width:102px;height:44px;z-index:12;position:relative;">
+<a href="https://www.bilibili.com/video/BV1fu3w6PEjU?spm_id_from=333.788.videopod.sections&vd_source=e535fa1a242f36698b7ed5274a2f176d" title="《凶死苦行山》"><img src="images/img0001.png" id="Shape2" alt="" width="102" height="44" style="width:102px;height:44px;"></a>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:13;">
+<img src="images/滚木唱片.png" id="Image2" alt="" title="600x400" width="806" height="298">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:14;">
+<img src="images/屏幕截图 2026-08-15 215412.png" id="Image1" alt="" title="600x400" width="806" height="433">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading6" style="display:block;width:100%;z-index:15;">
+<h1 id="Heading6">最新新闻</h1>
+</div>
+<div id="wb_Text5">
+<span style="color:#C00000;">北海城市的大规模重建<br>点击下方链接即可收看最新一期</span><span style="color:#C00000;">BTV NEWS</span>
+</div>
+<div id="wb_Shape1" style="display:inline-block;width:102px;height:44px;z-index:17;position:relative;">
+<a href="https://www.bilibili.com/video/BV1Yzua6uEqc/?spm_id_from=333.1387.homepage.video_card.click&vd_source=e535fa1a242f36698b7ed5274a2f176d" title="最新一期BTV NEWS"><img src="images/img0002.png" id="Shape1" alt="" width="102" height="44" style="width:102px;height:44px;"></a>
+</div>
+<div id="wb_Image3" style="display:inline-block;width:78px;height:76px;z-index:18;">
+<img src="images/xctv-NEWS.png" id="Image3" alt="" width="78" height="77">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="about" style="position:relative;text-align:center;width:100%;height:556px;float:left;clear:left;display:block;z-index:51;">
+<div id="about_Container" style="width:1672px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Text6" style="position:absolute;left:366px;top:79px;width:695px;height:81px;text-align:center;z-index:19;">
+<span style="color:#FFFFFF;font-family:'Microsoft YaHei UI Bold';font-size:32px;"><strong>我们不仅仅只为自己做新闻</strong></span><span style="color:#FFFFFF;font-family:???¨ª????;font-size:32px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:'Microsoft YaHei UI Bold';font-size:32px;"><strong>我们还会承包新闻制作权</strong></span></div>
+<div id="wb_MediaPlayer1" style="position:absolute;left:297px;top:177px;width:418px;height:243px;z-index:20;">
+<video id="MediaPlayer1" autoplay controls loop preload="auto" muted>
+<source src="BTV新闻片头.mp4" type="video/mp4">
+</video>
+</div>
+<div id="wb_MediaPlayer2" style="position:absolute;left:715px;top:177px;width:452px;height:243px;z-index:21;">
+<video id="MediaPlayer2" autoplay controls loop preload="auto" muted>
+<source src="今日西雪片头.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+</div>
+<div id="wb_VideoBackground">
+<div id="VideoBackground-video"><video src="XCTV NEWS24开头.mp4" autoplay loop muted playsinline></video>
+</div>
+<div id="VideoBackground-overlay"></div>
+<div id="VideoBackground">
+<div class="row">
+<div class="col-1">
+<div id="wb_Palms" style="display:block;width:100%;height:auto;z-index:22;">
+<img src="images/屏幕截图 2026-08-15 223326.png" id="Palms" alt="" width="802" height="500">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading9" style="display:block;width:100%;z-index:23;">
+<h1 id="Heading9">我们最出色的新闻频道</h1>
+</div>
+<div id="wb_Text7">
+<span style="color:#FFFFFF;font-family:'Microsoft YaHei UI';font-size:24px;">XCTV NEWS 24是我们XCTV的旗舰新闻频道。<br>我们依托它来进行24小时不间断的滚动新闻播出。</span>
+</div>
+<div id="wb_Image4" style="display:inline-block;width:163px;height:160px;z-index:25;">
+<img src="images/xctv-NEWS.png" id="Image4" alt="" width="163" height="160">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image5" style="display:block;width:100%;height:auto;z-index:26;">
+<img src="images/屏幕截图 2026-08-15 224935.png" id="Image5" alt="" title="600x400" width="806" height="447">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading10" style="display:block;width:100%;z-index:27;">
+<h1 id="Heading10">XCTV广告部</h1>
+</div>
+<div id="wb_Text8">
+<span style="color:#FFFFFF;">XCTV尽管是壮幸国有，但也需要一些资金来维护名下的三栋大型建筑物。广告部应运而生。<br>想要在一台等频道摆放广告可以私信。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:29;">
+<h1 id="Heading7">我们的总部</h1>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:30;">
+<h2 id="Heading8">洛潭市万华区环城东路4号洛潭电视中心</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading15" style="display:block;width:100%;z-index:31;">
+<h6 id="Heading15">&nbsp;</h6>
+</div>
+<div id="wb_Heading11" style="display:block;width:100%;z-index:32;">
+<h3 id="Heading11">微信</h3>
+</div>
+<hr id="Line1" style="display:block;width: 100%;z-index:33;">
+<div id="wb_Text9">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">微信号：13822626647</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading14" style="display:block;width:100%;z-index:35;">
+<h1 id="Heading14">关于XCTV的联系方式</h1>
+</div>
+<div id="wb_Heading12" style="display:block;width:100%;z-index:36;">
+<h3 id="Heading12">QQ</h3>
+</div>
+<hr id="Line2" style="display:block;width: 100%;z-index:37;">
+<div id="wb_Text10">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">B站首页简介有写</span><span style="color:#C00000;font-family:???¨ª????;font-size:21px;"><br></span><span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">或<br>加入我们的市民群<br>1067822810</span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Heading16" style="display:block;width:100%;z-index:39;">
+<h6 id="Heading16">&nbsp;</h6>
+</div>
+<div id="wb_Heading13" style="display:block;width:100%;z-index:40;">
+<h3 id="Heading13">bilibili</h3>
+</div>
+<hr id="Line3" style="display:block;width: 100%;z-index:41;">
+<div id="wb_Text11">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">不需要知道</span><span style="color:#C00000;font-family:Arial;font-size:21px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image6" style="display:inline-block;width:80px;height:30px;z-index:43;">
+<img src="images/xctv .png" id="Image6" alt="" width="80" height="31">
+</div>
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;"><strong>我们的网站</strong></span>
+</div>
+<div id="wb_linksMenu1" style="display:block;width:100%;z-index:45;">
+<ul id="linksMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./local-television.html" target="_self">地区分台</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">新闻</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">频道</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">旗下品牌</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;"><strong>联系方式</strong></span>
+</div>
+<div id="wb_linksMenu2" style="display:block;width:100%;z-index:47;">
+<ul id="linksMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="tel:" target="_self">13822626647</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="mailto:" target="_self">abcbaihao2023@outlook.com</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;"><strong>你可能需要的</strong></span>
+</div>
+<div id="wb_linksMenu3" style="display:block;width:100%;z-index:49;">
+<ul id="linksMenu3" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="https://www.bilibili.com" target="_self">bilibili</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://space.bilibili.com/523579047/dynamic?spm_id_from=333.1365.list.card_title.click" target="_self">迈向远方的b站主页</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.microsoft.com" target="_self">Microsoft</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Footer">
+<div id="Footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><br></span><span style="color:#FFFFFF;font-family:'Microsoft YaHei UI Bold';font-size:13px;">Copyright ©&nbsp; XCTV Brocasting Coporation </span><span style="color:#FFFFFF;font-family:Calibri;font-size:13px;">MMXXVI</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

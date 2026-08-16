@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题页面</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled2.css" rel="stylesheet">
+<link href="local-television.css" rel="stylesheet">
+<script src="bootstrap.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#PageHeader').addClass('visibility-hidden');
+   $('#wb_maps_grid').addClass('visibility-hidden');
+   $('#wb_LayoutGrid1').addClass('visibility-hidden');
+   $('#wb_LayoutGrid2').addClass('visibility-hidden');
+   $('#wb_LayoutGrid3').addClass('visibility-hidden');
+   $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   function onScrollPageHeader()
+   {
+      var $obj = $("#PageHeader");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('PageHeader', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('PageHeader', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#PageHeader').inViewPort(true))
+   {
+      $('#PageHeader').addClass("in-viewport");
+   }
+   onScrollPageHeader();
+   $(window).scroll(function(event)
+   {
+      onScrollPageHeader();
+   });
+   function onScrollmaps_grid()
+   {
+      var $obj = $("#wb_maps_grid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_maps_grid', 'animate-fade-in-down', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_maps_grid', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_maps_grid').inViewPort(true))
+   {
+      $('#wb_maps_grid').addClass("in-viewport");
+   }
+   onScrollmaps_grid();
+   $(window).scroll(function(event)
+   {
+      onScrollmaps_grid();
+   });
+   function onScrollLayoutGrid1()
+   {
+      var $obj = $("#wb_LayoutGrid1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid1', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid1').inViewPort(true))
+   {
+      $('#wb_LayoutGrid1').addClass("in-viewport");
+   }
+   onScrollLayoutGrid1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid1();
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid2').inViewPort(true))
+   {
+      $('#wb_LayoutGrid2').addClass("in-viewport");
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
+   });
+   function onScrollLayoutGrid3()
+   {
+      var $obj = $("#wb_LayoutGrid3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid3', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid3').inViewPort(true))
+   {
+      $('#wb_LayoutGrid3').addClass("in-viewport");
+   }
+   onScrollLayoutGrid3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid3();
+   });
+   function onScrollLayoutGrid5()
+   {
+      var $obj = $("#wb_LayoutGrid5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-in-down', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid5').inViewPort(true))
+   {
+      $('#wb_LayoutGrid5').addClass("in-viewport");
+   }
+   onScrollLayoutGrid5();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid5();
+   });
+   $('#wb_LayoutGrid5').parallax();
+});
+</script>
+</head>
+<body data-bs-spy="scroll">
+<div id="container">
+</div>
+<div id="PageHeader" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:7777;">
+<div id="PageHeader_Container" style="width:1649px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<picture id="wb_Picture1" style="position:absolute;left:102px;top:11px;width:75px;height:28px;z-index:0">
+<img src="images/xctv .png" id="Picture1" alt="" width="75" height="29">
+</picture>
+<div id="wb_CssMenu1" style="position:absolute;left:1210px;top:5px;width:339px;height:40px;z-index:1;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./home.html" target="_self">主页</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./subsidiary-brands.html" target="_self">旗下品牌</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./XCTV-NEWS.html" target="_self">新闻部</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./channel.html" target="_self">频道</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="wb_maps_grid">
+<div id="maps_grid">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;"><strong><br>地方分台</strong></span>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:3;">
+<img src="images/屏幕截图 2026-08-16 132406.png" id="Image2" alt="" title="600x400" width="794" height="408">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:4;">
+<h1 id="Heading1">峡关总台（老台）</h1>
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;"><br><br>位于峡关焕新区新城大道一号的峡关总台是XCTV的发家地。<br>该建筑群有新楼和老楼。老楼目前正在改建中。新楼目前还能正常使用和播出。<br>观众可以前来参观我们的各种广播设施以及演播室。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading3" style="display:block;width:100%;z-index:6;">
+<h1 id="Heading3">洛潭电视中心</h1>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;"><br><br>洛潭电视中心坐落洛潭运河河畔。<br>是</span><span style="color:#000000;">XCTV</span><span style="color:#000000;">现在大部分新闻节目和娱乐，电视节目的制作地点。<br>该建筑以一个问号形状构建，总共有八个大型制作演播室和数个新闻制作演播室。<br></span>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:8;">
+<img src="images/屏幕截图 2026-07-25 144906.png" id="Image3" alt="" title="600x400" width="794" height="359">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:9;">
+<img src="images/屏幕截图 2026-08-16 135547.png" id="Image1" alt="" title="600x400" width="794" height="456">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading2" style="display:block;width:100%;z-index:10;">
+<h1 id="Heading2">北海分台（云海分台一号楼）</h1>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;"><br><br>位于云海新城云新大道一号的北海分台<br>该建筑群有新楼和老楼。老楼目前正在改建中。新楼目前还能正常使用和播出。<br>观众可以前来参观我们的各种广播设施以及演播室。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:12;">
+<h1 id="Heading7">我们的总部</h1>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:13;">
+<h2 id="Heading8">洛潭市万华区环城东路4号洛潭电视中心</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading15" style="display:block;width:100%;z-index:14;">
+<h6 id="Heading15">&nbsp;</h6>
+</div>
+<div id="wb_Heading11" style="display:block;width:100%;z-index:15;">
+<h3 id="Heading11">微信</h3>
+</div>
+<hr id="Line1" style="display:block;width: 100%;z-index:16;">
+<div id="wb_Text9">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">微信号：13822626647</span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading14" style="display:block;width:100%;z-index:18;">
+<h1 id="Heading14">关于XCTV的联系方式</h1>
+</div>
+<div id="wb_Heading12" style="display:block;width:100%;z-index:19;">
+<h3 id="Heading12">QQ</h3>
+</div>
+<hr id="Line2" style="display:block;width: 100%;z-index:20;">
+<div id="wb_Text10">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">B站首页简介有写</span><span style="color:#C00000;font-family:???¨ª????;font-size:21px;"><br></span><span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">或<br>加入我们的市民群<br>1067822810</span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Heading16" style="display:block;width:100%;z-index:22;">
+<h6 id="Heading16">&nbsp;</h6>
+</div>
+<div id="wb_Heading13" style="display:block;width:100%;z-index:23;">
+<h3 id="Heading13">bilibili</h3>
+</div>
+<hr id="Line3" style="display:block;width: 100%;z-index:24;">
+<div id="wb_Text11">
+<span style="color:#C00000;font-family:'Microsoft YaHei UI Bold';font-size:21px;">不需要知道</span><span style="color:#C00000;font-family:Arial;font-size:21px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image6" style="display:inline-block;width:80px;height:30px;z-index:26;">
+<img src="images/xctv .png" id="Image6" alt="" width="80" height="31">
+</div>
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;"><strong>我们的网站</strong></span>
+</div>
+<div id="wb_linksMenu1" style="display:block;width:100%;z-index:28;">
+<ul id="linksMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./local-television.html" target="_self">地区分台</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">新闻</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">频道</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">旗下品牌</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;"><strong>联系方式</strong></span>
+</div>
+<div id="wb_linksMenu2" style="display:block;width:100%;z-index:30;">
+<ul id="linksMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="tel:" target="_self">13822626647</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="mailto:" target="_self">abcbaihao2023@outlook.com</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;"><strong>你可能需要的</strong></span>
+</div>
+<div id="wb_linksMenu3" style="display:block;width:100%;z-index:32;">
+<ul id="linksMenu3" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="https://www.bilibili.com" target="_self">bilibili</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://space.bilibili.com/523579047/dynamic?spm_id_from=333.1365.list.card_title.click" target="_self">迈向远方的b站主页</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.microsoft.com" target="_self">Microsoft</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Footer">
+<div id="Footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text16">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><br></span><span style="color:#FFFFFF;font-family:'Microsoft YaHei UI Bold';font-size:13px;">Copyright ©&nbsp; XCTV Brocasting Coporation </span><span style="color:#FFFFFF;font-family:Calibri;font-size:13px;">MMXXVI</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
