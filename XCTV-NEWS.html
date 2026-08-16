@@ -6,9 +6,61 @@
 <meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
 <link href="Untitled2.css" rel="stylesheet">
 <link href="XCTV-NEWS.css" rel="stylesheet">
+<script src="bootstrap.min.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#PageHeader').addClass('visibility-hidden');
+   function onScrollPageHeader()
+   {
+      var $obj = $("#PageHeader");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('PageHeader', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('PageHeader', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#PageHeader').inViewPort(true))
+   {
+      $('#PageHeader').addClass("in-viewport");
+   }
+   onScrollPageHeader();
+   $(window).scroll(function(event)
+   {
+      onScrollPageHeader();
+   });
+});
+</script>
 </head>
-<body>
+<body data-bs-spy="scroll">
 <div id="container">
+</div>
+<div id="PageHeader" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:7777;">
+<div id="PageHeader_Container" style="width:1671px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<picture id="wb_Picture1" style="position:absolute;left:84px;top:11px;width:75px;height:28px;z-index:0">
+<img src="images/xctv .png" id="Picture1" alt="" width="75" height="29">
+</picture>
+<div id="wb_CssMenu1" style="position:absolute;left:1251px;top:5px;width:339px;height:40px;z-index:1;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./index.html" target="_self">主页</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./local-television.html" target="_self">地区分台</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./subsidiary-brands.html" target="_self">旗下品牌</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./channel.html" target="_self">频道</a>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </body>
 </html>
