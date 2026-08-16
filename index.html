@@ -51,7 +51,7 @@ $(document).ready(function()
    function onScrollLayoutGrid6()
    {
       var $obj = $("#wb_LayoutGrid6");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
          AnimateCss('wb_LayoutGrid6', 'slide-left-in', 0, 1250);
