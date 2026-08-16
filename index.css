@@ -1,6 +1,6 @@
 div#container
 {
-   width: 1672px;
+   width: 1080px;
    position: relative;
    margin: 0 auto 0 auto;
    text-align: left;
@@ -772,10 +772,10 @@ body
 }
 #wb_Text5
 {
-   display: block;
+   display: inline-block;
    margin: 0;
-   box-sizing: border-box;
-   width: 100%;
+   width: 510px;
+   height: 70px;
 }
 #Shape1
 {
@@ -785,21 +785,6 @@ body
 #wb_Shape1
 {
    margin: 0;
-   vertical-align: top;
-}
-#wb_Image3
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image3
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   display: inline-block;
-   width: 78px;
-   height: 76px;
    vertical-align: top;
 }
 #about
@@ -1073,10 +1058,14 @@ body
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
-   display: inline-block;
-   width: 163px;
-   height: 160px;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 119px;
+   margin-left: auto;
+   margin-right: auto;
    vertical-align: top;
 }
 #wb_LayoutGrid3
@@ -1365,7 +1354,7 @@ body
 }
 #LayoutGrid4
 {
-   width: 1672px;
+   width: 1080px;
 }
 #LayoutGrid4 > .row > .col-1, #LayoutGrid4 > .row > .col-2, #LayoutGrid4 > .row > .col-3
 {
@@ -1799,7 +1788,7 @@ body
 }
 #Footer
 {
-   width: 1672px;
+   width: 1080px;
 }
 #Footer > .row > .col-1
 {
@@ -2193,5 +2182,20 @@ body
    display: inline-block;
    width: 80px;
    height: 30px;
+   vertical-align: top;
+}
+#wb_Image3
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   display: inline-block;
+   width: 71px;
+   height: 69px;
    vertical-align: top;
 }

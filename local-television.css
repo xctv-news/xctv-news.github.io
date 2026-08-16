@@ -1,6 +1,6 @@
 div#container
 {
-   width: 1649px;
+   width: 1080px;
    position: relative;
    margin: 0 auto 0 auto;
    text-align: left;
@@ -878,7 +878,7 @@ body
 }
 #LayoutGrid4
 {
-   width: 1649px;
+   width: 1080px;
 }
 #LayoutGrid4 > .row > .col-1, #LayoutGrid4 > .row > .col-2, #LayoutGrid4 > .row > .col-3
 {
@@ -1624,7 +1624,7 @@ body
 }
 #Footer
 {
-   width: 1649px;
+   width: 1080px;
 }
 #Footer > .row > .col-1
 {
