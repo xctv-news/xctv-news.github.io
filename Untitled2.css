@@ -33,13 +33,6 @@
    0% { transform: translate(0px,100%) rotate(1deg) ; opacity: 0; transform-origin: 0 0;  }
    100% { opacity: 1; transform: translate(0px,0px) rotate(0deg) ; transform-origin: 0 0;  }
 }
-@keyframes swoop-in
-{
-   0% { transform: translate(-400px,0px) rotate(0deg) scale(1.5,1) ; opacity: 0;  }
-   40% { transform: translate(0px,0px) rotate(0deg) scale(1.2,1.0) ; opacity: 1;  }
-   60% { transform: translate(20px,0px) rotate(0deg) scale(1.0,1.0) ;  }
-   100% { transform: translate(0px,0px) rotate(0deg) scale(1,1) ;  }
-}
 h1, .h1
 {
    font-family: Arial;
