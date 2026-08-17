@@ -25,6 +25,7 @@ $(document).ready(function()
    $('#wb_VideoBackground').addClass('visibility-hidden');
    $('#wb_LayoutGrid3').addClass('visibility-hidden');
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   $('#wb_LayoutGrid4').addClass('visibility-hidden');
    function onScrollPageHeader()
    {
       var $obj = $("#PageHeader");
@@ -248,6 +249,30 @@ $(document).ready(function()
       onScrollLayoutGrid5();
    });
    $('#wb_LayoutGrid5').parallax();
+   function onScrollLayoutGrid4()
+   {
+      var $obj = $("#wb_LayoutGrid4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'transform-zoom-in-up', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid4').inViewPort(true))
+   {
+      $('#wb_LayoutGrid4').addClass("in-viewport");
+   }
+   onScrollLayoutGrid4();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid4();
+   });
    $(window).on('resize', function()
    {
       ResponsiveVideo('VideoBackground-video');

@@ -22,6 +22,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid1').addClass('visibility-hidden');
    $('#wb_LayoutGrid2').addClass('visibility-hidden');
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   $('#wb_LayoutGrid7').addClass('visibility-hidden');
    function onScrollPageHeader()
    {
       var $obj = $("#PageHeader");
@@ -179,6 +180,30 @@ $(document).ready(function()
       onScrollLayoutGrid5();
    });
    $('#wb_LayoutGrid5').parallax();
+   function onScrollLayoutGrid7()
+   {
+      var $obj = $("#wb_LayoutGrid7");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid7').inViewPort(true))
+   {
+      $('#wb_LayoutGrid7').addClass("in-viewport");
+   }
+   onScrollLayoutGrid7();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid7();
+   });
 });
 </script>
 </head>
@@ -244,7 +269,7 @@ $(document).ready(function()
 <div id="wb_Card6" style="display:flex;width:100%;z-index:5;" class="card">
 <div id="Card6-card-body">
 <div id="Card6-card-item0">服务</div>
-<div id="Card6-card-item1">想要获取我们的服务可以私信我们。这些服务以无偿的方式提供。</div>
+<div id="Card6-card-item1">XCTV NEWS致力于最好的方式来播出新闻，如果新闻有什么问题可以来和我们反馈</div>
 </div>
 </div>
 </div>
@@ -316,7 +341,7 @@ $(document).ready(function()
 <h1 id="Heading1">最新新闻</h1>
 </div>
 <div id="wb_Text3">
-<span style="color:#000000;">北海城市的改造接近尾声，东铁国责任人 不要对法国</span><span style="color:#000000;">V </span><span style="color:#000000;">亲自下场整治混乱的北海路网。<br><br>消失已久的破坏多个服务器的 不要吧 小提琴（简称老七）再次出现于一个网易服务器。<br><br>屏山的鸡扒因为与悲延有关系被踢出。</span>
+<span style="color:#000000;"><strong><br>·</strong>北海城市的改造接近尾声，东铁国责任人 不要对法国</span><span style="color:#000000;">V </span><span style="color:#000000;">亲自下场整治混乱的北海路网。<br><br><strong>·</strong>消失已久的破坏多个服务器的 不要吧 小提琴（简称老七）再次出现于一个网易服务器。<br><br><strong>·</strong>屏山的鸡扒因为与悲延有关系被踢出。</span>
 </div>
 </div>
 </div>
